@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+	font-family: "游ゴシック";
+}
+
+.wrap {
+    width: 960px;
+    z-index: 10;
+    position: relative;
+    margin: 0 auto;
+	overflow: hidden;
+}
+.section {
+    width: 960px;
+    z-index: 10;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gNav {
+	width: 960px;
+	background-color: white;
+    position: absolute;
+    top: 540px;
+    height: 160px;
+    z-index: 1000;
+	transition: height 1s;
+	display: flex;
+}
+
+.header-left {
+	width: 40%;
+	display: flex;
+	align-items: center;
+}
+
+.header-right {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-right a {
+	padding: 5px 31px;
+	color: #4d4d4d;
+	border-right: 1px solid #4d4d4d;
+	text-decoration: none;
+}
+
+.header-right a:last-child{
+	border: none;
+}
+
+.is-fixed-nav {
+	position: fixed;
+	top: 0px;
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,.2);
+	height: 70px;
+	margin: 0 -500%;
+	padding: 0 500%;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 100%;
+    color: black;
+}
+
+.sTop {
+	height: 540px;
+	position: relative;
+	background-image: url("../images/main-1.png");
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	transition: background-image 1.5s;
+}
+
+.sTop #img {
+	align-self: center;
+	z-index: 1;
+}
+
+
+.s1 {
+	height: 700px;
+	/*
+	background-image: url("../images/content1-image.png");
+	background-repeat: no-repeat;
+	*/
+	padding-top: 70px;
+	transition: padding-top 1s;
+	margin-bottom: 70px;
+}
+
+.s1 .s1-content {
+	position: relative;
+}
+
+.s1 .text-box1 {
+	width: 400px;
+	height: 500px;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 100;
+	position: absolute;
+	top: 160px;
+	left: 520px;
+}
+
+.s1 .text-box1 .inner-box {
+	width: 340px;
+	height: 450px;
+	margin: 50px auto 0;
+}
+
+.s1 .text-box1 .inner-box p {
+	font-size: 25px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.s1 .text-box1 .inner-box p:last-child {
+	margin-top: 50px;
+}
+
+/*
+.is-fixed-trigger {
+	padding-top: 70px;
+}
+*/
+
+
+.s2 .news-box1 {
+	height: 35px;
+	margin: 100px 0 100px;
+	display: flex;
+	align-items: center;
+}
+
+.s2 h2 {
+	width: 10%;
+	text-align: center;
+	color: #333333;
+}
+
+.s2 .border-box {
+	border-bottom: 1px solid #333333;
+	border-top: 2px solid #333333;
+	width: 45%;
+	height: 7px;
+}
+
+.s2 .content1 {
+	width: 700px;
+	height: 265px;
+	display: flex;
+	margin: 0 auto 100px;
+}
+
+.s2 .text-box2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.s2 .content1 img {
+	width: 400px;
+	height: 264px;
+}
+
+.s2 .text-box2 p {
+	font-size: 25px;
+	color: #333333;
+}
+
+.s2 .text-box2 #p1 {
+	font-weight: bolder;
+}
+
+.s2 .text-box2 #p2 {
+	height: 100px;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.s2 .text-box2 #p3 {
+	font-size: 20px;
+}
+
+.s2 .content2 {
+	width: 750px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.s2 .content2 p {
+	color: #333333;
+}
+
+.s2 .content2 .inner-box1 {
+	width: 350px;
+	border-top: 2px solid #333333;
+}
+
+.s2 .content2 .inner-box1 img {
+	width: 350px;
+	height: 232px;
+}
+
+.s2 .content2 .inner-box1 p:first-child, .s2 .content2 .inner-box2 p:first-child {
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+	font-weight: bolder;
+}
+
+.s2 .content2 .inner-box2 {
+	width: 350px;
+	border-top: 2px solid #333333;
+}
+
+.s2 .content2 .inner-box2 img {
+	width: 350px;
+	height: 232px;
+}
+
+.s2 .content2 .inner-box1 p:last-child ,.s2 .content2 .inner-box2 p:last-child {
+	margin-top: 20px;
+}
+
+.footer {
+	height: 160px;
+	background-color: #2c2d2d;
+	margin-top: 100px;
+}
+
+.footer .fotter-top {
+	height: 90px;
+	width: 93%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.footer .fotter-bottom {
+	height: 50px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .text-box3 {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .fotter-text {
+	font-size: 18px;
+	color: white;
+}
+
+.footer .fotter-text2 {
+	display: inline;
+	font-size: 18px;
+	color: white;
+}
+
+
+

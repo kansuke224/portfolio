@@ -1,0 +1,339 @@
+/* ----------------------------------------------------------
+WEBフォント読み込み設定
+-----------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* ----------------------------------------------------------
+基本設定
+-----------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-weight: 400;
+  color: #6c7279;
+}
+p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #6c7279;
+}
+a {
+  color: #19adff;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  transition: color, 0.3s;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+.section {
+  padding: 100px 0;
+}
+.wrapper {
+  width: 1040px;
+  margin: 0 auto;;
+}
+
+/* ----------------------------------------------------------
+ヘッダー & ナビゲーション
+-----------------------------------------------------------*/
+#header {
+  position: fixed;
+  width: 1040px;
+  margin: 0 auto;
+  padding: 30px 0;
+  z-index: 999;
+  background-color: #fff;
+}
+#header .logo {
+  font-size: 21px;
+  color: #6c7279;
+  font-weight: 700;
+  float: left;
+}
+#header a:hover, .navigation a.active {
+  opacity: .6;
+}
+
+.navigation {
+  float: right;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  color: #6c7279;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 40px;
+  letter-spacing: 2px;
+}
+.navigation a:hover, .navigation a.active {
+  opacity: .6;
+}
+
+/* ----------------------------------------------------------
+メインビジュアル
+-----------------------------------------------------------*/
+.mainvisual {
+  width: 1040px;
+  height: auto;
+  margin: auto;
+	position: relative;
+}
+.mainvisual img:first-child {
+  width: 1040px;
+}
+
+.img2 {
+	position: absolute;
+	top: 260px;
+	left: 500px;
+}
+
+/* ----------------------------------------------------------
+プロフィール
+-----------------------------------------------------------*/
+.profile {
+  width: 1040px;
+  margin: auto;
+  background-color: #f2f2f2;
+  
+}
+
+.profile_content_bottom {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.profile h4 {
+  margin-top: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.profile h5 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.profile h6 {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.profile .text a:hover {
+  opacity: .6;
+}
+.profile_content_left {
+  width: 50%;
+  margin: 0 50px 0 100px;
+}
+
+.profile_content_top {
+	
+}
+
+.profile_content_right {
+  width: 50%;
+  margin: 0 100px 0 50px;
+}
+
+/* プロフィール詳細設定 */
+.profile_content_right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profile_content_right li {
+  padding: 10px 0px;
+}
+.profile_content_right .year {
+  float: left;
+  margin-top: 3px;
+  margin-right: 10px;
+  color: #888;
+  font-weight: bold;
+}
+
+.profile_content_right .text{
+  float: none;
+  width: auto;
+  margin-left: 80px;
+}
+
+/* ----------------------------------------------------------
+ポートフォリオ
+-----------------------------------------------------------*/
+#portfolio {
+  width: 1040px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.portfolio_item {
+  width: 515px;
+  height: 515px;
+  margin-bottom: 5px;
+  flex-wrap: space-between;
+}
+.portfolio_item img {
+  width: 515px;
+  height: 515px;
+}
+.portfolio_item .portfolio_link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.portfolio_item .portfolio_link .caption {
+  position: absolute;
+  width: 515px;
+  height:515px;
+  opacity: 0;
+  background: rgba(58, 54, 54, .9);
+  transition: all ease .5s;
+}
+.portfolio_item .portfolio_link .caption:hover {
+  opacity: 1;
+}
+.portfolio_item .portfolio_link .caption .caption_content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.portfolio_item h3 {
+  margin: 5px;
+  color: #e9eaed;
+  font-size: 17px;
+  line-height: 2;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.portfolio_item h4 {
+  margin: 10px 0;
+  color: #e9eaed;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------
+フッター
+-----------------------------------------------------------*/
+.footer {
+  width: 1040px;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 10%;
+}
+.footer h4 {
+  font-size: 16px;
+  color: #6c7279;
+  margin: 0 0 15px 0;
+  padding: 0px;
+}
+.footer p {
+  font-size: 14px;
+  color: #6c7279;
+}
+.footer a {
+  color: #6c7279;
+}
+.footer a:hover {
+  opacity: .6;
+}
+.footer .footer-share {
+  margin-top: 0;
+}
+.footer .footer_share li {
+  display: inline-block;
+  float: none;
+}
+.footer .footer_share a {
+  border: none;
+  font-size: 20px;
+  color: #6c7279;
+  letter-spacing: 15px;
+}
+.footer .footer_share a:hover {
+  opacity: .6;
+}
+
+/* ----------------------------------------------------------
+作品詳細ページ
+-----------------------------------------------------------*/
+.work_detail {
+  width: 1040px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.work_image {
+  margin: 0;
+  width: 60%;
+}
+.work_image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+}
+.detail_content  {
+  margin: 0;
+  width: 33%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 3%;
+  align-self: flex-start;
+}
+.detail_content h4 {
+  font-size: 27px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.detail_content h5 {
+  margin-bottom: -7%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.detail_content p {
+  margin-top: 7%;
+  color: #6c7279;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* 作品詳細内リンクボタン */
+.btn {
+　display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 3% 7%;
+  border-radius: 0px;
+　background-color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+　color: #fff;
+}
+.btn:hover, .btn:focus {
+  background-color: #000;
+  color: #fff;
+}
