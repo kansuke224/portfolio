@@ -10,29 +10,39 @@
 </head>
 
 <body>
-<div class="wrapper">
 
 <!-- ヘッダー部分 -------------------->
 <header id="header">
-<a class="logo" href="index.html">ESAKA NAOHIRO PORTFOLIO</a>
-<nav class="navigation">
-<ul>
-<li><a href="index.html#mainvisual">HOME</a></li>
-<li><a href="index.html#profile">PROFILE</a></li>
-<li><a href="index.html#portfolio">PORTFOLIO</a></li>
-<li><a href="index.html#contact">CONTACT</a></li>
-</ul>
-</nav>
+	<div id="header-wrap">
+		<!-- ロゴ・タイトル -->
+		<a class="logo" href="index.html">ESAKA NAOHIRO PORTFOLIO</a>
+		<!-- ナビゲーション -->
+		<nav class="navigation">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="index.html#profile">PROFILE</a></li>
+				<li><a href="index.html#portfolio">PORTFOLIO</a></li>
+				<li><a href="index.html#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
+
+<div class="wrapper">
 
 <!-- 作品詳細部分 -------------------->
 <section id="work_detail" class="section work_detail">
 
 	<!-- 画像部分 -->
 	<div class="work_image">
+		<img src="images/logo7.svg">
+		<div>WEB</div>
 		<img src="images/receipt_1.png">
 		<img src="images/receipt_2_2.png">
 		<img src="images/receipt_3_2.png">
+		<div>iphone(制作済みの画面のみ)</div>
+		<img src="images/ios-top.jpeg" class="ios">
+		<img src="images/ios-detail.jpeg" class="ios">
 	</div>
 
 	<!-- テキスト部分 -->
@@ -41,7 +51,10 @@
 		<ul>
 		<li>
 			<h5>作品概要</h5>
-			<p>レシートで健康管理ができるサービスです</p>
+			<p>
+				レシート画像で健康管理ができるWEBアプリケーションです。
+				現在iphoneアプリケーション版も制作中です。
+			</p>
 		</li>
 		<li>
 			<h5>制作時期</h5>
@@ -60,12 +73,12 @@
 		</li>
 		<li>
 			<h5>工夫点</h5>
-			<p>ocrライブラリにはtessaract OCRを利用しています</p>
+			<p>OpenCVという画像処理ライブラリでレシート画像を加工した後に、OCR(光学文字認識)をすることでレシート画像を解析しています。</p>
 			<!-- <p>問題解決のために実施した施策、デザインでこだわったところなど工夫した点をアピール</p> -->
 		</li>
 		<li>
 			<h5>制作環境と使用言語</h5>
-			<p>HTML5 CSS3 JavaScript Bootstrap Python Django SQL</p>
+			<p>HTML5 CSS3 JavaScript Bootstrap Python Django SQL Swift Xcode</p>
 		</li>
 		</ul>
 		<a class="btn" href="https://healthreceiptapp.herokuapp.com/" target="_blank">Site URL<i class="fa fa-long-arrow-right"></i></a>
@@ -76,11 +89,13 @@
 <footer id="contact" class="footer">
 	<h4><a href="#">江坂尚大</a></h4>
 	<p>mail : esaka.naohiro@gmail.com</p>
+	<!--
 	<ul class="footer_share">
 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 	</ul>
+	-->
 	<p><small>&copy; 2019 ESAKA NAOHIRO</small></p>
 </footer>
 
